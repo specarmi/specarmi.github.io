@@ -1,0 +1,83 @@
+:root {
+  --text: white;
+  --background: #121414;
+  --cyan: #94f3ff;
+  --dark-gray: #8a8b8c;
+
+  --page-width: 768px;
+  --font-size: 14px;
+  --mobile-font-size: 16px;
+  --line-height: 24px;
+  --mobile-line-height: 26px;
+  --section-title-font-size: 20px;
+  --mobile-section-title-font-size: 22px;
+  --name-font-size: 32px;
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--text);
+  background: var(--background);
+}
+
+.container {
+  max-width: var(--page-width);
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.sec-wrapper {
+  margin-top: 40px;
+}
+.section-head {
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: var(--section-title-font-size);
+  display: inline-block;
+}
+.section-item {
+  margin-top: 25px;
+}
+
+.home-wrapper .name {
+  font-size: var(--name-font-size);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.home-wrapper .social {
+  margin-top: 15px;
+}
+
+.pub-wrapper .title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.pub-wrapper .authors {
+  color: var(--dark-gray);
+  margin-bottom: 5px;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: var(--mobile-font-size);
+    line-height: var(--mobile-line-height);
+  }
+  .section-title {
+    font-size: var(--mobile-section-title-font-size);
+  }
+  .profile-pic {
+    width: 50% !important;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+}
